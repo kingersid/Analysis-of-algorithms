@@ -1,9 +1,7 @@
 
-# coding: utf-8
-
-# In[1]:
-
 import time
+
+# sum of N numbers
 
 def sumOfN2(n):
    start = time.time()
@@ -16,13 +14,7 @@ def sumOfN2(n):
 
    return theSum,end-start
 
-
-# In[4]:
-
 sumOfN2(80)
-
-
-# In[15]:
 
 # O(n) algo for finding min in a list
 def minimum_in_list(x):
@@ -43,17 +35,10 @@ def min_in_list(x):
             if isminimum:
                 overall_min = i
     return overall_min
- 
     
-
-
-# In[20]:
 
 from random import randrange
 import time
-
-
-# In[26]:
 
 for listSize in range(1000,10001,1000):
     alist = [randrange(100000) for x in range(listSize)]
@@ -61,16 +46,7 @@ for listSize in range(1000,10001,1000):
     print min_in_list(alist)
     end = time.time()
     print "size:",listSize," ~~~~~ " ,"time:",end-start
-    
-    
 
-
-# In[19]:
-
-alist
-
-
-# In[ ]:
 
 
 
